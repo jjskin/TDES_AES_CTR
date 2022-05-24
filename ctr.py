@@ -18,19 +18,19 @@ def TDESencrypt(data):
 input = open("0.bit", "rb")
 read = input.read()
 #------------------------------------------------------------------------------------------------#
-'''
+
 #AES kodowanie-----------------------------------------------------------------------------------#
 outputByteAES, nonce = AESencrypt(read)
 outByte = open('outputBytesAES.bit', 'wb')
 outByte.write(outputByteAES)
 outByte.close()
 #------------------------------------------------------------------------------------------------#
-'''
+
 #3DES kodowanie-----------------------------------------------------------------------------------#
 outputByteTDES = TDESencrypt(read)
-outByte = open('outputBytes3DES.bit', 'wb')
-outByte.write(outputByteTDES)
-outByte.close()
+outByte2 = open('outputBytes3DES.bit', 'wb')
+outByte2.write(outputByteTDES)
+outByte2.close()
 #------------------------------------------------------------------------------------------------#
 
 
