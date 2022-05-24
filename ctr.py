@@ -1,5 +1,3 @@
-from Crypto import Random
-from Crypto.Util import Counter
 from Crypto.Cipher import AES
 from Crypto.Cipher import DES3
 from secrets import token_bytes
